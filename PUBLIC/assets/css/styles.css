@@ -1,0 +1,194 @@
+
+*{margin:0 ; padding:0}
+
+.main {font-family: 'Raleway', sans-serif !important}
+
+a {text-decoration: none !important;}
+
+
+/* HEADER */
+
+
+.main_menu {display: flex;
+			justify-content: space-around;
+			margin-top: 50px !important;
+			font-size: 20px;
+			}
+
+a {color: #1cb0a1 !important;
+	font-weight: bold!important}
+
+a:hover {color: #f16876 !important;
+		font-weight: bold}
+
+
+header {margin-top: 80px !important;
+		margin-bottom: 80px !important;
+		text-align: center;
+		}
+
+			/* Underline From Left */
+			.hvr-underline-from-left {
+				padding-bottom: 10px;
+				display: inline-block;
+				vertical-align: middle;
+				-webkit-transform: perspective(1px) translateZ(0);
+				transform: perspective(1px) translateZ(0);
+				box-shadow: 0 0 1px transparent;
+				position: relative;
+				overflow: hidden;
+			}
+			.hvr-underline-from-left:before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				left: 0;
+				right: 100%;
+				bottom: 0;
+				background: #1cb0a1;
+				height: 4px;
+				-webkit-transition-property: right;
+				transition-property: right;
+				-webkit-transition-duration: 0.3s;
+				transition-duration: 0.3s;
+				-webkit-transition-timing-function: ease-out;
+				transition-timing-function: ease-out;
+			}
+			.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+				right: 0;
+			}
+
+
+
+/* ///////////CONTAINER//////////// */
+
+h1 {font-size: 50px !important}
+
+h2 {font-size: 25px !important;
+	color: #f16876 !important}
+
+.rose {background-color: #f16876!important}
+.bleu {background-color:#1cb0a1 !important}
+.blanc {color:white}
+
+
+/* /////////////////////ANCRE/////////////////*/
+
+.bounce {position:relative;
+ 		 left:50%;
+ 		 bottom:0;
+  		 margin-top:-25px;
+  		 margin-left:-25px;
+  	   	 height:50px;
+  		 width:50px;
+ 		 -webkit-animation:bounce 1s infinite;
+		 }
+
+@-webkit-keyframes bounce {	0%       { bottom:5px; }
+  							25%, 75% { bottom:15px; }
+  							50%      { bottom:20px; }
+  							100%     {bottom:0;}
+							}
+
+.bounce {display: flex;
+		justify-content: center;
+		}
+
+i { border: solid #1cb0a1 !important;
+    border-width: 0 3px 3px 0!important;
+    display: inline-block!important;
+    padding: 10px!important;
+	}
+
+.arrow_down {transform: rotate(45deg)!important;
+    		-webkit-transform: rotate(45deg)!important;
+			}
+
+
+
+/* ///////NAVBAR/////////// */
+
+
+.navbar-brand {margin-top: 10px!important;
+				margin-left: 10px!important;
+			}
+.nav-item {margin-top: 20px!important;
+				margin-left: 80px!important;
+			}
+.img-fluid {max-width: 100%;  height: auto;}
+
+/* /////////////////////////////////////*/
+	/*MEDIA QUERIES*/
+/*/////////////////////////////////////*/
+
+/*@media all and (max-device-width: 480px){
+	header {background-color: crimson;}
+}
+@media all and (min-width:571px){
+	header {background-color: pink;}
+}
+@media all and (min-width:655px){
+	header {background-color: blue;}
+}
+@media all and (min-width:684px){
+	header {background-color: crimson;}
+}
+@media all and (min-width:960px){
+	header {background-color: black;}
+}*/
+
+
+
+/*CONTACT*/
+
+
+.contenu { display: flex;
+			}
+
+input,textarea {padding:5px;
+	margin: 0;
+	background-color:#FFF;
+	width:100%;
+	font-size:20px;
+	color: #1cb0a1;
+	 font-family: 'Raleway', sans-serif;
+	 font-weight: bold;
+}
+
+#nom { margin: 10px 0 0 0;
+	border: 2px solid #1cb0a1;
+	color: #1cb0a1;
+	width:100%}
+#email { display: flex;
+	margin: 20px 0 0 0;
+	border: 2px solid #1cb0a1;
+	color: #1cb0a1;
+	width:100%}
+#objet { margin: 20px 0 0 0;
+	border: 2px solid #1cb0a1;
+	color: #1cb0a1;
+	 width:100% }
+#message { margin: 20px 0 0 0;
+	 border: 2px solid #1cb0a1;
+	 color: #1cb0a1;
+	 width:100%;
+	 font-family: 'Raleway', sans-serif;
+ 	}
+#fichier{ margin: 20px 0 0 0;
+	border: 2px solid #1cb0a1;
+	color: #1cb0a1;
+	width:100%;
+	font-family: 'Raleway', sans-serif;}
+#tel{ margin: 20px 0 0 0;
+	border: 2px solid #1cb0a1;
+	color: #1cb0a1;
+	 width:100%;
+ 	font-family: 'Raleway', sans-serif;}
+#envoi_message{ margin: 0px 0 0 0;
+	 border:none;
+	 background-color: #f16876;
+	 color: white;
+	 font-size:25px;
+	 padding:2px;
+ 	font-family: 'Raleway', sans-serif;
+	font-weight: normal !important}
